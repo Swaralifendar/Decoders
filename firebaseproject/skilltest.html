@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile & Skill Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card p-4 shadow-lg">
+            <h2 class="text-center mb-4">User Profile</h2>
+            <form id="profileForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="skills" class="form-label">Your Skills</label>
+                    <input type="text" class="form-control" id="skills" placeholder="E.g., JavaScript, Python" required>
+                </div>
+                <div class="mb-3">
+                    <label for="interests" class="form-label">Your Interests</label>
+                    <input type="text" class="form-control" id="interests" placeholder="E.g., Web Development, AI" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Skill Quiz</label>
+                    <select class="form-select" id="quiz">
+                        <option selected>Select a quiz</option>
+                        <option value="web">Web Development</option>
+                        <option value="data">Data Science</option>
+                        <option value="ai">Artificial Intelligence</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        background: linear-gradient(to right, #d7c5eb, #cdd1d6);
+        font-family: 'Arial', sans-serif;
+    }
+    .card {
+        max-width: 500px;
+        margin: auto;
+        border-radius: 12px;
+        background: white;
+    }
+    .btn-primary {
+        background: #280f94;
+        border: none;
+    }
+    .btn-primary:hover {
+        background: #0056b3;
+    }
+</style>
