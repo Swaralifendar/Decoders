@@ -230,11 +230,10 @@
                 
                 // In a real app, you would send this data to your server
                 if (isSignup) {
-                    // Store user data (in a real app, this would be an API call)
                     localStorage.setItem("userData", JSON.stringify({
                         name: name,
                         email: email,
-                        password: password // Note: In production, never store passwords like this
+                        password: password 
                     }));
                     alert("Account created successfully! You can now login.");
                     // Switch back to login form
